@@ -24,7 +24,6 @@ public class TodoControllerJpa {
         this.todoRepository=todoRepository;
     }
 
-
     private TodoRepository todoRepository;
 
 
@@ -44,6 +43,7 @@ public class TodoControllerJpa {
         model.put("todo",todo);
         return "addTodo";
     }
+    
 
     @RequestMapping(value="add-todo",method= RequestMethod.POST)
     public String addNewTodo(ModelMap model, @Valid Todo todo, BindingResult result){
