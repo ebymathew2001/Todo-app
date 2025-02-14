@@ -1,0 +1,9 @@
+ Ignore target folder and build files
+/target
+*.jar
+*.war
+*.class
+
+# Ignore IntelliJ and VS Code settings
+.idea/
+.vscode/
