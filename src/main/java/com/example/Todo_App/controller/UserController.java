@@ -60,8 +60,6 @@ public class UserController {
     }
 
 
-
-
     @GetMapping("/customerhome")
     public String showCustomerHome(Model model, Principal principal) {
         if (principal != null) {

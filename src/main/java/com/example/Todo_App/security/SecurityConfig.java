@@ -49,7 +49,7 @@ public class SecurityConfig {
                                 if (authority.getAuthority().equals("ROLE_ADMIN")) {
                                     session.setAttribute("admin", true);
                                     session.setAttribute("username", authentication.getName());
-                                    response.sendRedirect("/adminhome");
+                                    response.sendRedirect("/admin/admin-home");
                                     return;
                                 } else if (authority.getAuthority().equals("ROLE_USER")) {
                                     session.setAttribute("user", true);
